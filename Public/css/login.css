@@ -24,66 +24,34 @@ body{
 }
 
 .imagem1 {
-  position:relative;
-  top: -267px;              
-  left: -914px;             
-  width: 0px;            
-  height: 1750px;           
-  background-image: url("/Public/Assets/Images/—Pngtree—salon logo vector_6942006.png");
-  background-size: contain;
-  background-position: top left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: -10px;
+  margin-top: -40px;
 }
 
-/* garante que o cartão de login fique acima do fundo */
-.login-card {
-  position: relative;
-  background-size: cover;
-  left: -50px;
-  z-index: 1;
-  backdrop-filter: blur(6px);
-}
-
-
-/* Card */
 .login-card{
-  position: relative;
+  background:transparent;
+  border-radius:15px;
+  padding:2.5rem;
   width:100%;
-  max-width:420px;
-  background:linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
-  border-radius:14px;
-  padding:2rem;
-  border:1px solid rgba(255,255,255,0.04);
-  box-shadow:0 10px 30px rgba(2,6,23,0.6);
-}
-
-.brand{
-  display:flex;
-  align-items:center;
-  gap:.75rem;
-  margin-bottom:1.25rem
-}
-    
-/* Config do botão EH*/
-.brand .logo{
-  height:48px;
-  width:48px;
-  border-radius:10px;
-  background:linear-gradient(135deg,#b0892d,#eadc9b);
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-weight:700;
-  color:#08111a
+  max-width:400px;
+  box-shadow:0 12px 36px rgba(2,6,23,0.6);
+  backdrop-filter:blur(10px);
 }
 
 .brand h1{
-  font-size:1.125rem;
-  letter-spacing:0.2px
+    font-size: 1.3rem;
+    text-align:center
 }
 
-p.lead{
-    color:rgba(230,238,248,0.85);
-    margin-bottom:1rem
+.brand h3{
+    font-size: 1rem;
+    font-weight:400;
+    margin-bottom:1.5rem;
+    text-align:center;
+    color:rgba(230,238,248,0.75);
 }
 
 form{
@@ -239,6 +207,13 @@ a, a:hover, a:visited, a:active{
   text-align:center
 }
 
+.signin{
+  font-size:medium;
+  color:rgba(230,238,248,0.85);
+  margin-top:.8rem;
+  text-align:center
+}
+
 /* Pequenas telas */
 @media (max-width:1000px){
       
@@ -246,10 +221,6 @@ a, a:hover, a:visited, a:active{
     position:relative;
     left:0;
     padding:1.5rem; 
-  }
-      
-  .brand h1{
-    font-size:1rem
   }
 }
 
