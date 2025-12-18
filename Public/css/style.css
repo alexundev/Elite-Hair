@@ -13,7 +13,7 @@
     body{
         margin:0;
         font-family:'SF Pro Display', sans-serif;
-        background:linear-gradient(180deg,#071023 0%,#071727 60%);
+        background: linear-gradient(148deg,rgba(0, 10, 20, 1) 22%, rgba(0, 58, 99, 1) 71%, rgba(0, 91, 151, 1) 87%, rgba(0, 116, 189, 1) 95%);
         color:#e6eef8;
         line-height:1.4
     }
@@ -63,7 +63,7 @@
 
     /* Card */
     .card{
-        background:var(--card);
+        background:linear-gradient(90deg,rgba(255,255,255,0.02),transparent);
         border-radius:20px;
         padding:20px;
         box-shadow:0 6px 24px rgba(2,6,23,0.6);
@@ -83,6 +83,7 @@
         gap:10px;
         flex-wrap:wrap;
         margin-top:12px
+        
     }
     
     .pill{
